@@ -33,10 +33,11 @@ The dataset used in this project is the &quot;Spambase data set&quot; found on t
 
 <p align="center">
 _Table 1_
+</p>
+
 | Number of classes | Total number of samples | Number of samples per class | Number of features | Feature value types |
 | --- | --- | --- | --- | --- |
 | 2 | 4,597 | 1,812 (1), 2,785 (0) | 57 | Real |
-</p>
 
 This database contains information about 4597 email messages. Most of the features indicate whether a particular word or character was frequently occurring in the email. Here are the definitions of the features:
 
