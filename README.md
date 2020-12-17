@@ -31,7 +31,7 @@ With regards to Statistical Significance, we can use the Student&#39;s t-test to
 
 The dataset used in this project is the &quot;Spambase data set&quot; found on the KEEL dataset website1. Table 1 demonstrates the outline of this dataset:
 
-<p align="justify">
+<p align="center">
   Lorem ipsum
 </p>
 
