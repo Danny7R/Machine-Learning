@@ -31,7 +31,9 @@ With regards to Statistical Significance, we can use the Student&#39;s t-test to
 
 The dataset used in this project is the &quot;Spambase data set&quot; found on the KEEL dataset website1. Table 1 demonstrates the outline of this dataset:
 
+<center>
 _Table 1_
+</center>
 | Number of classes | Total number of samples | Number of samples per class | Number of features | Feature value types |
 | --- | --- | --- | --- | --- |
 | 2 | 4,597 | 1,812 (1), 2,785 (0) | 57 | Real |
@@ -48,7 +50,7 @@ Therefore, the dataset would be as described in Figure 1.
 
 We will use the Pandas and NumPy libraries to import and manipulate the data, while using the Matplotlib library to visualize it.
 
-![yyyyy](figures/dataset.png)
+![](figures/dataset.png)
 
 _Figure 1: Spambase dataset_
 
