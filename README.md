@@ -54,7 +54,8 @@ We will use the Pandas and NumPy libraries to import and manipulate the data, wh
 ![](figures/dataset.png)
 
 _Figure 1: Spambase dataset_
-
+Figure 1: Spambase dataset
+*Figure 1: Spambase dataset*
 #### Algorithms
 
 The following supervised machine learning algorithms are used to build the classifiers:
