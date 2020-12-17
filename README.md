@@ -16,7 +16,7 @@ With regards to Statistical Significance, we can use the Student's t-test to com
 
 ## Data Exploration
 
-The dataset used in this project is the &quot;Spambase data set&quot; found on the KEEL dataset website1. Table 1 demonstrates the outline of this dataset:
+The dataset used in this project is the "Spambase data set" found on the KEEL dataset website. Table 1 demonstrates the outline of this dataset:
 
 _Table 1_
 | Number of classes | Total number of samples | Number of samples per class | Number of features | Feature value types |
