@@ -31,10 +31,7 @@ With regards to Statistical Significance, we can use the Student&#39;s t-test to
 
 The dataset used in this project is the &quot;Spambase data set&quot; found on the KEEL dataset website1. Table 1 demonstrates the outline of this dataset:
 
-<p align="center">
-*Table 1*
-</p>
-
+_Table 1_
 | Number of classes | Total number of samples | Number of samples per class | Number of features | Feature value types |
 | --- | --- | --- | --- | --- |
 | 2 | 4,597 | 1,812 (1), 2,785 (0) | 57 | Real |
