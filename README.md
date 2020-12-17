@@ -5,19 +5,13 @@ This repo contains 3 projects regarding the fundamental machine learning algorit
 
 ## Introduction
 
-One of the main aspects of a great email application or client is its ability to accurately detect all spams. This is, arguably, the main feature users look for. This is where machine learning shows its strength.
-
-In this project we will evaluate and compare different classification algorithms and demonstrate how well they can detect spams.
-
-## Problem Statement
-
-Our goal here is to detect whether an incoming email is a spam, using some features extracted from the email, which we will go through in the Data Exploration section. We pass these features on to different algorithms to see which can do a better job at classification. Now, how can we decide which algorithm has a higher performance (or lower error)? Next, we will talk about our metrics.
+One of the main aspects of a great email application or client is its ability to accurately detect all spams. This is, arguably, the main feature users look for. This is where machine learning shows its strength. In this project we will evaluate and compare different classification algorithms and demonstrate how well they can detect spams. The inputs of these algorithms are some features extracted from the email, which we will go through in the Data Exploration section. We pass these features on to different algorithms to see which can do a better job at classification. Now, how can we decide which algorithm has a higher performance (or lower error)? Next, we will talk about our metrics.
 
 ## Metrics
 
 One simple common way for evaluating classifiers is the accuracy percentage. This numeric metric is obtained simply by dividing the number of correctly classified samples by the total number of samples. Among other evaluation metrics, Recall, Precision, and F1 score could also be very helpful, especially if the dataset is highly unbalanced.
 
-With regards to Statistical Significance, we can use the Student&#39;s t-test to compare different models&#39; performances. We will apply this test to all our metrics (test set accuracy, precision, recall, and f1 score).
+With regards to Statistical Significance, we can use the Student's t-test to compare different models' performances. We will apply this test to all our metrics (test set accuracy, precision, recall, and f1 score).
 
 
 ## Data Exploration
