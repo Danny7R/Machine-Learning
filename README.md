@@ -3,27 +3,24 @@
 This repo contains 3 projects regarding the fundamental machine learning algorithms. in the first two projects, we will be implementing these algorithms in Python from scratch. This helps understand what each algorithm actually does, which gives us an insight into how to leverage them in the best way. In the final project, we use a few of these algorithms for a real-world problem: **Spam Detection in Emails**.
 
 
-### Project Description
-#### Introduction
+## Introduction
 
 One of the main aspects of a great email application or client is its ability to accurately detect all spams. This is, arguably, the main feature users look for. This is where machine learning shows its strength.
 
 In this project we will evaluate and compare different classification algorithms and demonstrate how well they can detect spams.
 
-#### Problem Statement
+## Problem Statement
 
 Our goal here is to detect whether an incoming email is a spam, using some features extracted from the email, which we will go through in the Data Exploration section. We pass these features on to different algorithms to see which can do a better job at classification. Now, how can we decide which algorithm has a higher performance (or lower error)? Next, we will talk about our metrics.
 
-#### Metrics
+## Metrics
 
 One simple common way for evaluating classifiers is the accuracy percentage. This numeric metric is obtained simply by dividing the number of correctly classified samples by the total number of samples. Among other evaluation metrics, Recall, Precision, and F1 score could also be very helpful, especially if the dataset is highly unbalanced.
 
 With regards to Statistical Significance, we can use the Student&#39;s t-test to compare different models&#39; performances. We will apply this test to all our metrics (test set accuracy, precision, recall, and f1 score).
 
 
-### Analysis
-
-#### Data Exploration
+## Data Exploration
 
 The dataset used in this project is the &quot;Spambase data set&quot; found on the KEEL dataset website1. Table 1 demonstrates the outline of this dataset:
 
@@ -48,7 +45,8 @@ We will use the Pandas and NumPy libraries to import and manipulate the data, wh
 
 _Figure 1: Spambase dataset_
 
-#### Algorithms
+
+## Algorithms
 
 The following supervised machine learning algorithms are used to build the classifiers:
 
@@ -59,12 +57,7 @@ The following supervised machine learning algorithms are used to build the class
 We will choose the best of each of the algorithms above, and then proceed to the comparison between the three. Please note that logistic regression was replaced with SVM because of a much better overall performance.
 
 
-#### Implementation
-
-Different frameworks are used to implement classifiers in python. Neural networks models are designed in Keras running on top of TensorFlow, while the rest are implemented using the Scikit-learn library.
-
-
-### Methodology
+## Methodology
 
 In order to compare different classifiers, we can use the leave-one-out cross-validation method, which means we split the data into k folds and each time all algorithms are trained on k-1 folds and the accuracy is evaluated on the remaining fold. This process is repeated k times and we consider k accuracies for each algorithm to determine which has the best performance.
 
@@ -73,13 +66,13 @@ Alternatively, if the dataset is big enough, we can compare performances on a se
 In this project, we will follow the first methodology for comparison. We first do the hyperparameter tuning, individually for each model, by compare different versions of the model using the 10-fold cross-validation method. When parameters are tuned, we will proceed to compare the best of each of the 3 classifiers.
 
 
-### Results
+## Results
 
-#### Hyperparameter Tuning
+### Hyperparameter Tuning
 
 In the hyperparameter tuning process, there were numerous parameters that could be changed, specially for neural networks. Although, almost all these parameters were tested to find the best model for each algorithm, only a few will be mentioned here, for the sake of comparison and analysis. Please note that the train and test accuracies mentioned here are the average of the 10-fold cross-validation.
 
-##### Neural Networks:
+#### Neural Networks:
 
 The following hyperparameters are considered, with Table 2 showing the results: number of hidden layers (1, 2) – number of units in each layer (32, 64) – activation function in hidden layers (ReLU, Tanh) – L2 regularization
 
@@ -96,7 +89,7 @@ _Table 2_
 
 Table 2 indicates our best hyperparameters: 1 hidden layer containing 32 units, Tanh activation function, and regularizer parameter = 0.01. we can see how regularization has helped reduce overfitting and get a better result on the test set.
 
-##### Decision Tree:
+#### Decision Tree:
 
 Two of the main hyperparameters in Decision trees are considered here: max depth, and min samples per leaf. Both have regularizing effects and come in handy when the model is overfitting. In order to have a stronger regularizing effect, max depth should be decreased, and min samples per leaf should be increased. Table 3 demonstrates the results:
 
@@ -124,7 +117,7 @@ _Table 4_
 
 It is obvious that the best model here would be a random forest with max depth = None and min samples per leaf = 1.
 
-##### SVM:
+#### SVM:
 
 Hyperparameters analyzed here were as follows: kernel (&#39;linear&#39;, &#39;rbf&#39;), and gamma (&#39;auto&#39;, &#39;scale&#39;). Table 5 describes the results:
 
@@ -191,7 +184,7 @@ _Table 8: SVM_
 | K9 | 0.93716771 | 0.91067538 | 0.88461538 | 0.88950276 | 0.88705234 |
 | Mean | 0.9350 | 0.9319 | 0.9259 | 0.8996 | 0.9124 |
 
-#### T-test
+### T-test
 
 Table 9 indicates the Student&#39;s t-test calculated for each of our metrics.
 
@@ -210,7 +203,7 @@ If the calculated p-value is below the threshold chosen for statistical signific
 
 As we anticipated, when comparing either of Neural Net and SVM with the Decision Tree, the test shows significant difference (almost all those values are well below 0.10), pointing out the better performance of the decision tree over the other two. As for the values regarding the comparison of Neural Net and SVM, almost all show there is no significant difference.
 
-### Conclusion
+## Conclusion
 
 The results of this experiment well demonstrated the better performance of the Decision tree (a Random Forest in our case) over the Neural Net and SVM classifiers. It should also be mentioned that the Random forest took less time out of all tree to be trained. The Neural Net and the SVM models did relatively the same, although, in terms of the run time, SVM was much slower, specially when using a linear kernel. Hence, the SVM classifier should be regarded here as the worst.
 
