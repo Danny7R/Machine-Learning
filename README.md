@@ -33,6 +33,7 @@ The dataset used in this project is the &quot;Spambase data set&quot; found on t
 
 _Table 1_
 
+| --- | --- |
 | Number of classes | 2 |
 | Total number of samples | 4,597 |
 | Number of samples per class | 1,812 (1), 2,785 (0) |
