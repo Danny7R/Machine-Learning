@@ -32,7 +32,7 @@ With regards to Statistical Significance, we can use the Student&#39;s t-test to
 The dataset used in this project is the &quot;Spambase data set&quot; found on the KEEL dataset website1. Table 1 demonstrates the outline of this dataset:
 
 <p align="center">
-_Table 1_
+*Table 1*
 </p>
 
 | Number of classes | Total number of samples | Number of samples per class | Number of features | Feature value types |
@@ -54,8 +54,7 @@ We will use the Pandas and NumPy libraries to import and manipulate the data, wh
 ![](figures/dataset.png)
 
 _Figure 1: Spambase dataset_
-Figure 1: Spambase dataset
-*Figure 1: Spambase dataset*
+
 #### Algorithms
 
 The following supervised machine learning algorithms are used to build the classifiers:
