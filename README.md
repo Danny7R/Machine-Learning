@@ -48,7 +48,7 @@ Therefore, the dataset would be as described in Figure 1.
 
 We will use the Pandas and NumPy libraries to import and manipulate the data, while using the Matplotlib library to visualize it.
 
-![](figures/dataset.png)
+![yyyyy](figures/dataset.png)
 
 _Figure 1: Spambase dataset_
 
