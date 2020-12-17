@@ -48,13 +48,11 @@ This database contains information about 4597 email messages. Most of the featur
 - 1 continuous integer attribute of type Capital\_run\_length\_longest = length of longest uninterrupted sequence of capital letters.
 - 1 continuous integer attribute of type Capital\_run\_length\_total = total number of capital letters in the e-mail.
 
-Therefore, the dataset would be as described in Figure 1 (next page).
+Therefore, the dataset would be as described in Figure 1.
 
 We will use the Pandas and NumPy libraries to import and manipulate the data, while using the Matplotlib library to visualize it.
 
-1. https://sci2s.ugr.es/keel/dataset.php?cod=109
-
-![](RackMultipart20201217-4-8y5dgb_html_8278e26e86fc75c0.png)
+![](figures/dataset.png)
 
 _Figure 1: Spambase dataset_
 
