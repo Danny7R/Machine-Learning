@@ -32,13 +32,9 @@ With regards to Statistical Significance, we can use the Student&#39;s t-test to
 The dataset used in this project is the &quot;Spambase data set&quot; found on the KEEL dataset website1. Table 1 demonstrates the outline of this dataset:
 
 _Table 1_
-| | |
-| --- | --- |
-| Number of classes | 2 |
-| Total number of samples | 4,597 |
-| Number of samples per class | 1,812 (1), 2,785 (0) |
-| Number of features | 57 |
-| Feature value types | Real |
+| Number of classes | Total number of samples | Number of samples per class | Number of features | Feature value types |
+| --- | --- | --- | --- | --- |
+| 2 | 4,597 | 1,812 (1), 2,785 (0) | 57 | Real |
 
 This database contains information about 4597 email messages. Most of the features indicate whether a particular word or character was frequently occurring in the email. Here are the definitions of the features:
 
