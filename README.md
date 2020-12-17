@@ -1,10 +1,6 @@
 # Machine-Learning
 
-The first 3 projects
-
-
-
-## **Spam Email Detection Using 3 Different Classifiers**
+This repo contains 3 projects regarding the fundamental machine learning algorithms. in the first two projects, we will be implementing these algorithms in Python from scratch. This helps understand what each algorithm actually does, which gives us an insight into how to leverage them in the best way. In the final project, we use a few of these algorithms for a real-world problem: #### **Spam Detection in Emails**.
 
 
 ### Project Description
