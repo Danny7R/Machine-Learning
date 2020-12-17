@@ -25,8 +25,8 @@ _Table 1_
 
 This database contains information about 4597 email messages. Most of the features indicate whether a particular word or character was frequently occurring in the email. Here are the definitions of the features:
 
-- 48 continuous real attributes of type word\_freq\_&quot;WORD&quot; = percentage of words in the e-mail that match &quot;WORD&quot;. A &quot;word&quot; in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string.
-- 6 continuous real attributes of type char\_freq\_&quot;CHAR&quot; = percentage of characters in the e-mail that match &quot;CHAR&quot;.
+- 48 continuous real attributes of type word\_freq\_"WORD" = percentage of words in the e-mail that match "WORD". A "WORD" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string.
+- 6 continuous real attributes of type char\_freq\_"CHAR" = percentage of characters in the e-mail that match "CHAR".
 - 1 continuous real attribute of type Capital\_run\_length\_average = average length of uninterrupted sequences of capital letters.
 - 1 continuous integer attribute of type Capital\_run\_length\_longest = length of longest uninterrupted sequence of capital letters.
 - 1 continuous integer attribute of type Capital\_run\_length\_total = total number of capital letters in the e-mail.
@@ -113,7 +113,7 @@ It is obvious that the best model here would be a random forest with max depth =
 
 #### SVM:
 
-Hyperparameters analyzed here were as follows: kernel (&#39;linear&#39;, &#39;rbf&#39;), and gamma (&#39;auto&#39;, &#39;scale&#39;). Table 5 describes the results:
+Hyperparameters analyzed here were as follows: kernel ('linear', 'rbf'), and gamma ('auto', 'scale'). Table 5 describes the results:
 
 _Table 5_
 
@@ -124,7 +124,7 @@ _Table 5_
 | rbf | scale | 79 % | 77 % |
 | linear | scale | 93.5% | 93.1% |
 
-Our best model here seems to have a linear kernel with gamma=&#39;auto&#39;.
+Our best model here seems to have a linear kernel with gamma='auto'.
 
 #### Comparing the Best Models
 
@@ -180,7 +180,7 @@ _Table 8: SVM_
 
 ### T-test
 
-Table 9 indicates the Student&#39;s t-test calculated for each of our metrics.
+Table 9 indicates the Student's t-test calculated for each of our metrics.
 
 _Table 9: T-test_
 
